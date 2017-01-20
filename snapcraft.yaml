@@ -7,13 +7,13 @@ description: |
   we live in tweetspace and your description wants to look good in the snap
   store.
 
-#grade: devel # must be 'stable' to release into candidate/stable channels
-#confinement: devmode # use 'strict' once you have the right plugs and slots
+grade: devel # must be 'stable' to release into candidate/stable channels
+confinement: devmode # use 'strict' once you have the right plugs and slots
 #confinement: strict
 
 parts:
   hello:
-    #plugin: python #python3 #autotools
+    plugin: python2 #python3 #autotools
     source: . #https://github.com/markokr/spongeshaker.git
     #source-type: git
 
