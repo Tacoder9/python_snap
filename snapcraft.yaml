@@ -9,14 +9,16 @@ description: |
 
 #grade: devel # must be 'stable' to release into candidate/stable channels
 #confinement: devmode # use 'strict' once you have the right plugs and slots
-confinement: strict
+#confinement: strict
+
+parts:
+  hello:
+    plugin: cmake #python3 #autotools
+    source: https://github.com/markokr/spongeshaker.git
+    #source-type: git
 
 apps:
   hellopython:
-    command: hellopython
+    command: hello
 
-parts:
-  spongeshaker:
-    plugin: python3 #autotools
-    source: https://github.com/markokr/spongeshaker.git
-    #source-type: git
+
