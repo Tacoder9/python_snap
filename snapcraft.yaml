@@ -13,8 +13,8 @@ description: |
 
 parts:
   hello:
-    plugin: python #python3 #autotools
-    source: https://github.com/markokr/spongeshaker.git
+    #plugin: python #python3 #autotools
+    source: . #https://github.com/markokr/spongeshaker.git
     #source-type: git
 
 apps:
