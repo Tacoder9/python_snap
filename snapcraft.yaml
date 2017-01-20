@@ -16,7 +16,7 @@ apps:
     command: hellopython
 
 parts:
-  gnu-hello:
+  hellopython:
     #plugin: autotools
     source: https://github.com/markokr/spongeshaker.git
     #source-type: git
