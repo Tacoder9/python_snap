@@ -11,6 +11,10 @@ description: |
 confinement: devmode # use 'strict' once you have the right plugs and slots
 
 
+apps:
+  hello_python:
+    command: hello
+
 parts:
   spongeshaker:
     plugin: python2
